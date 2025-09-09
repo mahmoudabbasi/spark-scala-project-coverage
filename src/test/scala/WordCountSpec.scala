@@ -28,4 +28,19 @@ class WordCountSpec extends AnyFunSuite with BeforeAndAfterAll{
   }
 
 
+  test("TextProcessor normalizeText should clean and lowercase") {
+    val input = Seq("Hello, WORLD!", "Spark-Scala")
+    val result = TextProcessor.normalizeText(spark, input).collect()
+    assert(result.contains("hello"))
+    assert(result.contains("world"))
+    assert(result.contains("sparkscala"))
+  }
+
+  test("Utils topNWords should return top N words") {
+    val data = Seq(("a", 10), ("b", 5), ("c", 8))
+    val top2 = Utils.topNWords(data, 2)
+    assert(top2 == Seq(("a", 10), ("c", 8)))
+  }
+
+
 }

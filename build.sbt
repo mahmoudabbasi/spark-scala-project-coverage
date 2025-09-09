@@ -36,5 +36,8 @@ sonarProperties ++= Map(
   "sonar.tests" -> "src/test/scala",
   "sonar.host.url" -> "http://localhost:9000",
   "sonar.scala.coverage.reportPaths" -> "target/scala-2.12/scoverage-report/scoverage.xml",
-  "sonar.login" -> "e18b1e45308cf178d082fd6648eb7e460c703ce2"
+  "sonar.login" -> "e18b1e45308cf178d082fd6648eb7e460c703ce2",
+  "sonar.scala.junit.reportPaths" -> "target/test-reports"
 )
+
+testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-u", "target/test-reports")

@@ -1,7 +1,6 @@
 package ir.test
 
 import org.apache.spark.sql.SparkSession
-import ir.test.WordCount
 
 object RunWordCount {
 

@@ -6,3 +6,7 @@ addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.9.3")
 
 addSbtPlugin("com.olaq" % "sbt-sonar-scanner-plugin" % "1.3.0")
 
+//addSbtPlugin("org.scoverage" % "sbt-scoverage" % "2.0.6")
+//addSbtPlugin("com.outr" % "sbt-sonar-scanner" % "2.3.0")
+
+
