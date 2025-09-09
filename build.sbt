@@ -12,13 +12,6 @@ val sparkVersion = "3.1.1"
 
 resolvers ++= Seq(
   "Local Maven Central" at "https://repo1.maven.org/maven2/",
-//  "Local Maven Repo 1" at "https://repo.sadad.co.ir/repository/BCS-maven-release/",
-//  "Local Maven Repo 2" at "https://repo.sadad.co.ir/repository/oxygen-maven-group/",
-//  "Local Maven Repo 3" at "https://nexus.sadad.local/repository/maven-group/",
-//  "Local Maven Repo 4" at "https://repo.sadad.co.ir/repository/oxygen-maven-group/",
-//  "Local Maven Repo 5" at "https://nexus.sadad.local/repository/maven-releases/",
-//  "Local Maven Repo 6" at "https://repo.sadad.co.ir/repository/oxygen-maven-snapshots/",
-//  "Local Maven Repo 7" at "https://repo.sadad.co.ir/repository/oxygen-maven-releases/"
 )
 //credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
 
@@ -32,4 +25,13 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.2.16" % Test,
   "org.scoverage" %% "scalac-scoverage-plugin" % "1.3.1"
 
+)
+
+
+sonarProperties ++= Map(
+  "sonar.projectKey" -> "ir.test:wordcount",
+  "sonar.projectName" -> "WordCount Project",
+  "sonar.host.url" -> "http://localhost:9000",   // آدرس SonarQube
+  "sonar.login" -> "your_token_here",            // توکن ادمین یا پروژه
+  "sonar.scala.coverage.reportPaths" -> "target/scala-2.12/scoverage-report/scoverage.xml"
 )
