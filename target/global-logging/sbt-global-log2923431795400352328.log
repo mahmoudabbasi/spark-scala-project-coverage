@@ -1,0 +1,75 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 1.8.0_121)
+[debug] Load.defaultLoad until apply took 1164.459333ms
+[debug]           Load.loadUnit: plugins took 150.449244ms
+[debug]           Load.loadUnit: defsScala took 0.520983ms
+[debug] [Loading] Scanning directory /home/mahmoud/app-development-sample/unitTestScala01/project
+[debug]             Load.loadUnit: mkEval took 14.115109ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/mahmoud/app-development-sample/unitTestScala01/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 54.218461 ms
+[info] loading settings for project unittestscala01-build from plugins.sbt ...
+[debug]               Load.resolveProject(unittestscala01-build) took 128.364302ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id unittestscala01-build, base: /home/mahmoud/app-development-sample/unitTestScala01/project, plugins: List(<none>))) took 228.048372ms
+[debug] [Loading] Done in /home/mahmoud/app-development-sample/unitTestScala01/project, returning: (unittestscala01-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 665.864093ms
+[debug]           Load.loadUnit: cleanEvalClasses took 14.308816ms
+[debug]         Load.loadUnit(file:/home/mahmoud/app-development-sample/unitTestScala01/project/, ...) took 840.755279ms
+[debug]       Load.apply: load took 2636.424571ms
+[debug]       Load.apply: resolveProjects took 7.414883ms
+[debug]       Load.apply: finalTransforms took 85.40269ms
+[debug]       Load.apply: config.delegates took 10.260961ms
+[debug]       Load.apply: Def.make(settings)... took 683.110177ms
+[debug]       Load.apply: structureIndex took 154.432154ms
+[debug]       Load.apply: mkStreams took 4.157345ms
+[info] loading project definition from /home/mahmoud/app-development-sample/unitTestScala01/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 4845.310246ms
+[debug]     Load.loadUnit: defsScala took 0.003817ms
+[debug] [Loading] Scanning directory /home/mahmoud/app-development-sample/unitTestScala01
+[debug]       Load.loadUnit: mkEval took 0.247573ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/mahmoud/app-development-sample/unitTestScala01, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbtide.ConfigPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.973545 ms
+[info] loading settings for project unittestscala01 from build.sbt ...
+[debug]         Load.resolveProject(unittestscala01) took 1.495806ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id unittestscala01, base: /home/mahmoud/app-development-sample/unitTestScala01, plugins: List(<none>))) took 4.986774ms
+[debug] [Loading] Done in /home/mahmoud/app-development-sample/unitTestScala01, returning: (unittestscala01)
+[debug]     Load.loadUnit: loadedProjectsRaw took 84.011238ms
+[debug]     Load.loadUnit: cleanEvalClasses took 1.896031ms
+[debug]   Load.loadUnit(file:/home/mahmoud/app-development-sample/unitTestScala01/, ...) took 4932.852678ms
+[debug] Load.apply: load took 5250.169798ms
+[debug] Load.apply: resolveProjects took 0.091725ms
+[debug] Load.apply: finalTransforms took 17.104465ms
+[debug] Load.apply: config.delegates took 0.416203ms
+[debug] Load.apply: Def.make(settings)... took 147.210144ms
+[debug] Load.apply: structureIndex took 38.921354ms
+[debug] Load.apply: mkStreams took 0.00263ms
+[info] set current project to unitTestScala01 (in build file:/home/mahmoud/app-development-sample/unitTestScala01/)
+[warn] there's a key that's not used by any other settings/tasks:
+[warn]  
+[warn] * unittestscala01 / idePackagePrefix
+[warn]   +- /home/mahmoud/app-development-sample/unitTestScala01/build.sbt:7
+[warn]  
+[warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check
+[warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[warn] sbt server could not start because there's another instance of sbt running on this build.
+[warn] Running multiple instances is unsupported
