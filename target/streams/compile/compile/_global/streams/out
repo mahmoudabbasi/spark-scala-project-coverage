@@ -1,9 +1,0 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/mahmoud/app-development-sample/unitTestScala01/src/main/scala/RunWordCount.scala:4:16: imported `WordCount' is permanently hidden by definition of object WordCount in package test[0m
-[0m[[0m[33mwarn[0m] [0m[0mimport ir.test.WordCount[0m
-[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
-[0m[[0m[0minfo[0m] [0m[0mCleaning datadir [/home/mahmoud/app-development-sample/unitTestScala01/target/scala-2.12/scoverage-data][0m
-[0m[[0m[0minfo[0m] [0m[0mBeginning coverage instrumentation[0m
-[0m[[0m[0minfo[0m] [0m[0mInstrumentation completed [19 statements][0m
-[0m[[0m[0minfo[0m] [0m[0mWrote instrumentation file [/home/mahmoud/app-development-sample/unitTestScala01/target/scala-2.12/scoverage-data/scoverage.coverage][0m
-[0m[[0m[0minfo[0m] [0m[0mWill write measurement data to [/home/mahmoud/app-development-sample/unitTestScala01/target/scala-2.12/scoverage-data][0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
