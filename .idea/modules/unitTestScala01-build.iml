@@ -14,6 +14,7 @@
     <orderEntry type="module-library" scope="PROVIDED">
       <library name="sbt: sbt-1.4.7">
         <CLASSES>
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.olaq/sbt-sonar-scanner-plugin/scala_2.12/sbt_1.0/1.3.0/jars/sbt-sonar-scanner-plugin.jar!/" />
           <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.jetbrains/sbt-ide-settings/scala_2.12/sbt_1.0/1.1.0/jars/sbt-ide-settings.jar!/" />
           <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/jarjar/jarjar/1.8.2/jarjar-1.8.2.jar!/" />
           <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/jarjarabrams/jarjar-abrams-core_2.12/1.8.2/jarjar-abrams-core_2.12-1.8.2.jar!/" />
@@ -39,6 +40,7 @@
           <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.3.0/scala-xml_2.12-1.3.0.jar!/" />
           <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.9.3/sbt-scoverage-1.9.3.jar!/" />
           <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scoverage/scalac-scoverage-plugin_2.12.12/1.4.11/scalac-scoverage-plugin_2.12.12-1.4.11.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api/2.9.0.887/sonar-scanner-api-2.9.0.887.jar!/" />
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.12.12/lib/scala-compiler.jar!/" />
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.12.12/lib/scala-library.jar!/" />
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.12.12/lib/scala-reflect.jar!/" />
@@ -137,7 +139,7 @@
   </component>
   <component name="SbtModule">
     <option name="buildForURI" value="file:$MODULE_DIR$/../../" />
-    <option name="imports" value="_root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.sbtide.ConfigPlugin.autoImport._, _root_.sbtassembly.AssemblyPlugin.autoImport._, _root_.scoverage.ScoverageSbtPlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.sbtide.ConfigPlugin, _root_.sbtassembly.AssemblyPlugin, _root_.scoverage.ScoverageSbtPlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
+    <option name="imports" value="_root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.sbtide.ConfigPlugin.autoImport._, _root_.sbtassembly.AssemblyPlugin.autoImport._, _root_.scoverage.ScoverageSbtPlugin.autoImport._, _root_.com.olaq.sbt.SonarScannerPlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.sbtide.ConfigPlugin, _root_.sbtassembly.AssemblyPlugin, _root_.scoverage.ScoverageSbtPlugin, _root_.com.olaq.sbt.SonarScannerPlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
     <option name="resolvers" value="$USER_HOME$/.ivy2/cache|ivy|true|Local cache, https://repo1.maven.org/maven2/|maven|Local Maven Central, https://repo1.maven.org/maven2/|maven|public" />
   </component>
 </module>

@@ -27,11 +27,14 @@ libraryDependencies ++= Seq(
 
 )
 
+enablePlugins(SonarScannerPlugin)
 
 sonarProperties ++= Map(
   "sonar.projectKey" -> "ir.test:wordcount",
   "sonar.projectName" -> "WordCount Project",
-  "sonar.host.url" -> "http://localhost:9000",   // آدرس SonarQube
-  "sonar.login" -> "your_token_here",            // توکن ادمین یا پروژه
-  "sonar.scala.coverage.reportPaths" -> "target/scala-2.12/scoverage-report/scoverage.xml"
+  "sonar.sources" -> "src/main/scala",
+  "sonar.tests" -> "src/test/scala",
+  "sonar.host.url" -> "http://localhost:9000",
+  "sonar.scala.coverage.reportPaths" -> "target/scala-2.12/scoverage-report/scoverage.xml",
+  "sonar.login" -> "e18b1e45308cf178d082fd6648eb7e460c703ce2"
 )

@@ -1,10 +1,11 @@
 package ir.test
 
 import org.apache.spark.sql.SparkSession
+import org.scalatest.BeforeAndAfterAll
 import org.scalatest.funsuite.AnyFunSuite
 
 
-class WordCountSpec extends AnyFunSuite {
+class WordCountSpec extends AnyFunSuite with BeforeAndAfterAll{
 
 
   val spark: SparkSession = SparkSession.builder()
